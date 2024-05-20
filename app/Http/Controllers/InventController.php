@@ -20,7 +20,7 @@ class InventController extends Controller
      */
     public function create()
     {
-        //
+        return view('components.inventaris.create');
     }
 
     /**

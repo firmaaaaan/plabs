@@ -20,6 +20,7 @@
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="../assets/img/favicon/favicon.ico" />
+    <link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -120,6 +121,21 @@
 
     <!-- Page JS -->
     <script src="../assets/js/dashboards-analytics.js"></script>
+    <script src="https://unpkg.com/dropzone@5/dist/min/dropzone.min.js"></script>
+    <script>
+        Dropzone.autoDiscover = false;
+
+        // Dropzone configuration
+        var myDropzone = new Dropzone(".dropzone", {
+            url: "/file/post",
+            paramName: "file",
+            maxFilesize: 2, // MB
+            maxFiles: 10,
+            acceptedFiles: 'image/*',
+            dictDefaultMessage: "Drag files here or click to upload.",
+            clickable: true
+        });
+      </script>
 
     <!-- Place this tag in your head or just before your close body tag. -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>

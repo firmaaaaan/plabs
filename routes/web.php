@@ -10,3 +10,4 @@ Route::get('/dashboard-admin', function () {
 
 Route::get('/', [AuthController::class, 'login'])->name('login');
 Route::get('/data-inventaris', [InventController::class, 'index'])->name('invent.index');
+Route::get('/create-inventaris', [InventController::class, 'create'])->name('invent.create');

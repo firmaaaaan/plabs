@@ -7,7 +7,7 @@
     <!-- Basic Bootstrap Table -->
     <div class="card">
         <div class="table-responsive text-nowrap">
-        <a href="" class="btn btn-primary btn-sm mx-2 my-2" style="float: right">Tambah Inventaris</a>
+        <a href="{{ route('invent.create') }}" class="btn btn-primary btn-sm mx-2 my-2" style="float: right">Tambah Inventaris</a>
         <table class="table">
           <thead>
             <tr>
@@ -16,6 +16,7 @@
               <th>Nama Alat</th>
               <th>Tanggal Pembelian</th>
               <th>Jumlah</th>
+              <th>Harga</th>
               <th>Aksi</th>
             </tr>
           </thead>
